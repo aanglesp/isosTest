@@ -18,9 +18,9 @@ export default function TableData() {
 
   const personz = list.map((person) => {
     return (
-      <tr className="rowData">
+      <tr className="rowData" key={person.id}>
         <td>
-          <img src={person.avatar}/>
+          <img src={person.avatar} alt={person.first_name}/>
         </td>
         <td>{person.id}</td>
         <td>{person.first_name}</td>
